@@ -1,15 +1,15 @@
-# Copy Placeholder
+# Placeholder to Value
 
-A Chrome extension that allows you to copy placeholder text from text fields via the right-click context menu.
+A Chrome extension that fills empty text fields with their placeholder text when you double-click them.
 
 ## Features
 
-- Right-click on any text input field to access the "Copy Placeholder" option
+- Double-click any empty text field to fill it with its placeholder text
 - Works with:
-  - `<input>` fields (text, email, password, search, tel, url, number)
+  - `<input>` fields (text, email, search, tel, url)
   - `<textarea>` elements
-  - Contenteditable elements (supports `data-placeholder` and `aria-placeholder` attributes)
-- Visual notification when placeholder is copied
+- Automatically selects the filled text for easy editing
+- Triggers input/change events for compatibility with forms
 
 ## Installation
 
@@ -26,23 +26,21 @@ A Chrome extension that allows you to copy placeholder text from text fields via
 
 ## Usage
 
-1. Right-click on any text input field that has a placeholder
-2. Select "Copy Placeholder" from the context menu
-3. The placeholder text is now in your clipboard
+1. Find any text input field that has a placeholder and is empty
+2. Double-click on the field
+3. The placeholder text is now entered as the field's value
 
 ## Permissions
 
-This extension requires the following permissions:
-- `contextMenus`: To add the "Copy Placeholder" option to the context menu
-- `clipboardWrite`: To copy the placeholder text to your clipboard
-- Access to all URLs: To detect placeholder text on any website
+This extension requires minimal permissions:
+- Access to all URLs: To detect and fill placeholder text on any website
 
 ## Privacy
 
 This extension:
 - Does NOT collect any personal data
 - Does NOT send any data to external servers
-- Only reads placeholder attributes from text fields when you right-click
+- Only reads placeholder attributes from text fields when you double-click
 - All operations are performed locally in your browser
 
 See [PRIVACY.md](PRIVACY.md) for the full privacy policy.

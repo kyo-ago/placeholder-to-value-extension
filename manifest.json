@@ -1,15 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Copy Placeholder",
+  "name": "Placeholder to Value",
   "version": "1.0.0",
-  "description": "Copy placeholder text from text fields via right-click context menu",
-  "permissions": [
-    "contextMenus",
-    "clipboardWrite"
-  ],
-  "background": {
-    "service_worker": "background.js"
-  },
+  "description": "Double-click empty text fields to fill them with their placeholder text",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],

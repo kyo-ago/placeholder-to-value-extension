@@ -1,10 +1,10 @@
-# Privacy Policy for Copy Placeholder
+# Privacy Policy for Placeholder to Value
 
 **Last updated: December 21, 2024**
 
 ## Overview
 
-Copy Placeholder is a Chrome extension that allows users to copy placeholder text from text fields via the right-click context menu. This privacy policy explains how we handle your data.
+Placeholder to Value is a Chrome extension that fills empty text fields with their placeholder text when you double-click them. This privacy policy explains how we handle your data.
 
 ## Data Collection
 
@@ -27,13 +27,9 @@ This extension does not transmit any data to any servers. All functionality is p
 
 ## Permissions Explained
 
-The extension requires the following permissions:
+The extension requires the following permission:
 
-1. **contextMenus**: Required to add the "Copy Placeholder" option to the browser's right-click context menu.
-
-2. **clipboardWrite**: Required to copy the placeholder text to your clipboard when you select the menu option.
-
-3. **Access to all URLs**: Required to detect and read placeholder attributes from text fields on any website you visit. This permission is necessary because placeholders can exist on any website.
+1. **Access to all URLs**: Required to detect placeholder attributes from text fields on any website you visit and fill them when you double-click. This permission is necessary because placeholders can exist on any website.
 
 ## Third-Party Services
 
@@ -46,9 +42,9 @@ If we make changes to this privacy policy, we will update the "Last updated" dat
 ## Contact
 
 If you have questions about this privacy policy, please open an issue on our GitHub repository:
-https://github.com/kyo-ago/copy-placeholder-extension
+https://github.com/kyo-ago/placeholder-to-value
 
 ## Open Source
 
 This extension is open source. You can review the complete source code at:
-https://github.com/kyo-ago/copy-placeholder-extension
+https://github.com/kyo-ago/placeholder-to-value
