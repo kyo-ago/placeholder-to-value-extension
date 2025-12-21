@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect x="4" y="4" width="120" height="120" rx="16" fill="#4285f4"/>
+
+  <!-- Text field representation -->
+  <rect x="16" y="44" width="96" height="40" rx="6" fill="white" stroke="#e0e0e0" stroke-width="2"/>
+
+  <!-- Placeholder text lines -->
+  <rect x="24" y="58" width="40" height="4" rx="2" fill="#9e9e9e"/>
+  <rect x="24" y="68" width="24" height="4" rx="2" fill="#9e9e9e"/>
+
+  <!-- Copy icon overlay -->
+  <g transform="translate(72, 52)">
+    <rect x="0" y="8" width="24" height="28" rx="3" fill="none" stroke="#4285f4" stroke-width="3"/>
+    <rect x="8" y="0" width="24" height="28" rx="3" fill="white" stroke="#4285f4" stroke-width="3"/>
+  </g>
+</svg>
