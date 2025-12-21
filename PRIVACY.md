@@ -42,9 +42,9 @@ If we make changes to this privacy policy, we will update the "Last updated" dat
 ## Contact
 
 If you have questions about this privacy policy, please open an issue on our GitHub repository:
-https://github.com/kyo-ago/placeholder-to-value
+https://github.com/kyo-ago/placeholder-to-value-extension
 
 ## Open Source
 
 This extension is open source. You can review the complete source code at:
-https://github.com/kyo-ago/placeholder-to-value
+https://github.com/kyo-ago/placeholder-to-value-extension
