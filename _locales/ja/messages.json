@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "Placeholder to Value",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "空のテキストフィールドをダブルクリックして、プレースホルダーテキストを自動入力",
+    "description": "Extension description"
+  }
+}

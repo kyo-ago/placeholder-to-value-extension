@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "Placeholder to Value",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Double-click empty text fields to fill them with their placeholder text",
+    "description": "Extension description"
+  }
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Placeholder to Value - Demo</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      padding: 50px;
+      max-width: 1000px;
+      width: 100%;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .header h1 {
+      font-size: 32px;
+      color: #1a1a2e;
+      margin: 0 0 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .header p {
+      color: #666;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .demo-area {
+      display: grid;
+      grid-template-columns: 1fr 80px 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .panel {
+      background: #f8f9fa;
+      border-radius: 16px;
+      padding: 30px;
+    }
+
+    .panel-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+      color: #333;
+      margin-bottom: 8px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 14px 16px;
+      font-size: 16px;
+      border: 2px solid #e0e0e0;
+      border-radius: 10px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      background: white;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #667eea;
+      box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+    }
+
+    .form-group textarea {
+      resize: none;
+      height: 80px;
+    }
+
+    .arrow {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .arrow-icon {
+      font-size: 40px;
+      color: #667eea;
+    }
+
+    .arrow-text {
+      font-size: 12px;
+      color: #888;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    .cursor-hint {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #fff3cd;
+      color: #856404;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 500;
+      margin-top: 15px;
+    }
+
+    .cursor-hint svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .filled-input {
+      background: #e8f5e9 !important;
+      border-color: #4caf50 !important;
+    }
+
+    .selected-text {
+      background: #bbdefb !important;
+    }
+
+    .feature-list {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 40px;
+      padding-top: 30px;
+      border-top: 1px solid #eee;
+    }
+
+    .feature {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #555;
+      font-size: 14px;
+    }
+
+    .feature-icon {
+      width: 24px;
+      height: 24px;
+      background: #e8f5e9;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #4caf50;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>
+        <svg width="40" height="40" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="128" height="128" rx="24" fill="#667eea"/>
+          <rect x="20" y="45" width="88" height="38" rx="8" fill="white"/>
+          <text x="32" y="70" font-family="Arial" font-size="16" fill="#999">placeholder text...</text>
+        </svg>
+        Placeholder to Value
+      </h1>
+      <p>Double-click empty fields to fill them with placeholder text</p>
+    </div>
+
+    <div class="demo-area">
+      <div class="panel">
+        <div class="panel-title">Before (Empty Field)</div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="example@email.com" value="">
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="+1 (555) 123-4567" value="">
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Enter your message here..."></textarea>
+        </div>
+        <div class="cursor-hint">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.64 21.97C13.14 22.21 12.54 22 12.31 21.5L10.13 16.76L7.62 18.78C7.45 18.92 7.24 19 7.02 19C6.55 19 6.16 18.61 6.16 18.14V5.51C6.16 5.04 6.55 4.65 7.02 4.65C7.24 4.65 7.45 4.73 7.62 4.87L18.42 14.17C18.76 14.47 18.79 14.99 18.5 15.33C18.34 15.52 18.11 15.62 17.86 15.62H14.14L16.31 20.34C16.55 20.84 16.35 21.45 15.85 21.68L13.64 21.97Z"/></svg>
+          Double-click here
+        </div>
+      </div>
+
+      <div class="arrow">
+        <div class="arrow-icon">→</div>
+        <div class="arrow-text">Double<br>Click</div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-title">After (Filled & Selected)</div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" class="filled-input" value="example@email.com" style="color: #2e7d32;">
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" class="filled-input" value="+1 (555) 123-4567" style="color: #2e7d32;">
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea class="filled-input" style="color: #2e7d32;">Enter your message here...</textarea>
+        </div>
+        <div class="cursor-hint" style="background: #e8f5e9; color: #2e7d32;">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+          Text filled & selected!
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-list">
+      <div class="feature">
+        <div class="feature-icon">✓</div>
+        <span>Works on any website</span>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">✓</div>
+        <span>No data collection</span>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">✓</div>
+        <span>100% Local processing</span>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">✓</div>
+        <span>Open source</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
